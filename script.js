@@ -28,35 +28,35 @@ function animate(){
 
 
 function handleKeyPressed(event){
-    if(event.key == 'w'){
+    if(event.key == 'w' || event.key == 'ArrowUp'){
         player.goingUp = true;
         //spritesheet change logic here when added
     }
-    if(event.key == 'a'){
+    if(event.key == 'a' || event.key == 'ArrowLeft'){
         player.goingLeft = true;
         //spritesheet change logic here when added
     }
-    if(event.key == 's'){
+    if(event.key == 's' || event.key == 'ArrowDown'){
         player.goingDown = true;
         //spritesheet change logic here when added
     }
-    if(event.key == 'd'){
+    if(event.key == 'd' || event.key == 'ArrowRight'){
         player.goingRight = true;
-        //spritesheet change logic here when added
+        //spritesheet change logic here when added  
     }
 }
 
 function handleKeyLetGo(event){
-    if(event.key == 'w'){
+    if(event.key == 'w' || event.key == 'ArrowUp'){
         player.goingUp = false;
     }
-    if(event.key == 'a'){
+    if(event.key == 'a' || event.key == 'ArrowLeft'){
         player.goingLeft = false;
     }
-    if(event.key == 's'){
+    if(event.key == 's' || event.key == 'ArrowDown'){
         player.goingDown = false;
     }
-    if(event.key == 'd'){
+    if(event.key == 'd' || event.key == 'ArrowRight'){
         player.goingRight = false;
     }
 }
